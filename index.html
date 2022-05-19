@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>亲爱的、热爱的、园园</title>
-
+    <link rel="shortcut icon" href="love.png">
     <link type="text/css" rel="stylesheet" href="./css/default.css">
 	<script type="text/javascript" src="./js/jquery.js"></script>
 	<script type="text/javascript" src="./js/jscex.js"></script>
@@ -17,7 +17,7 @@
 </head>
     <body>
         <!--这里放音乐哦 -->
-		<audio autoplay="autopaly">
+		<audio id="audios">
 			<source src="./iloveu.mp3" audio="" mp3"="">
 		</audio>
 
@@ -28,6 +28,7 @@
                 <div id="text">
 			        <div id="code">
 			        	<span class="say"> 亲爱的园园：</span><br>
+					<span class="say"> </span><br>
 			        	<span class="say">见字如面，展信舒颜。园园，此刻阳光尚未升起，窗外依旧朦胧，趁着这最后一抹夜色，想来给你多诉几分衷肠多说几分爱意也无妨。</span><br>
 						<span class="say"> </span><br>
 						<span class="say">如你所见。园园，这是我第一次尝试着写一封情书。落笔前的所思所想所感，提笔的瞬间竟忘的一干二净，只得文行至此，情思也至此。请原谅我口也笨拙，手也笨拙，写不出好听的情话，也一时不知道该如何言语。想到你一直不愿告诉我你的地址，这封信我也不知该寄往何方，心里也会有点突然难过，可我还是想写一写，然后把它寄到你的心里。</span><br>
@@ -38,8 +39,7 @@
 						<span class="say"> </span><br>
 			        	<span class="say"> 亲爱的园园，你问我，会不会影响我的生活，我想说，憨憨，除非两个人一点都不喜欢，不然影响不到才是奇怪嘞。爱的越深，影响和渗透的就越是全面，但两个人的相互影响和愿意彼此做的改变，不应该是最美的事情么。就像这人间山河远阔，人间烟火，无一是你，无一又不是你，但都难抵我心头欢喜。</span><br>
 						<span class="say"> </span><br>
-			        	<span class="say"> 以上，写到这里已不知我是怀着怎样的心情写下，在这个我们的第一个520，一封第一次执笔的情书，它有着不一样的意义，但它也无关紧要，微不足道，因为我要和你一直走下去。</span><br>
-						<span class="say"> </span><br>
+			        	<span class="say"> 以上，写到这里已不知我是怀着怎样的心情写下，在这个我们的第一个520，一封第一次执笔的情书，它有着不一样的意义，但它也无关紧要，微不足道，因为我要和你一直走下去。</span>
 			        </div>
                 </div>
                 <div id="clock-box">
@@ -71,7 +71,7 @@
 
         var opts = {
             seed: {
-                x: width / 2 - 20,
+                x: width / 2 - 200,
                 color: "rgb(190, 26, 37)",
                 scale: 2
             },
@@ -213,5 +213,10 @@
         runAsync().start();
     })();
     </script>
+	<script>
+	document.addEventListener('click', function() {
+    document.getElementById('audios').play();
+	});
+	</script>
 </body>
 </html>
